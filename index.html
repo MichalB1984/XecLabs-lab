@@ -15,16 +15,33 @@ font-family:'Inter',sans-serif;
 color:#111;
 line-height:1.6;
 background:#fff;
-scroll-behavior:smooth
+scroll-behavior:smooth;
+margin-top:34px;
 }
 
 .container{max-width:1150px;margin:auto;padding:0 24px}
+
+/* TEST BANNER */
+.test-banner{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#ef4444;
+color:white;
+text-align:center;
+padding:6px;
+font-weight:bold;
+z-index:9999;
+font-size:14px;
+}
 
 /* NAV */
 .nav{background:#020617;position:sticky;top:0;z-index:100}
 .nav-inner{display:flex;justify-content:space-between;align-items:center;height:64px}
 .brand-text{font-weight:700;font-size:1.1rem}
-.xec{color:#fff}.labs{color:#3aa0ff}
+.xec{color:#fff}
+.labs{color:#3aa0ff}
 .nav-links{list-style:none;display:flex;gap:24px}
 .nav-links a{color:#cbd5f5;text-decoration:none}
 .nav-cta{background:#2563eb;padding:8px 16px;border-radius:6px;color:#fff}
@@ -104,24 +121,6 @@ footer{text-align:center;padding:40px;color:#666}
 .who-wrapper{grid-template-columns:1fr}
 .hero-title{font-size:2.6rem}
 }
-
-/* TEST BANNER */
-.test-banner{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#ef4444;
-color:white;
-text-align:center;
-padding:6px;
-font-weight:bold;
-z-index:9999;
-font-size:14px;
-}
-
-body{margin-top:34px}
-
 </style>
 </head>
 
@@ -151,6 +150,53 @@ Business process transformation powered by technology, automation and AI — exe
 <a href="#contact" class="cta">Contact</a>
 </div>
 </header>
+
+<!-- WHO -->
+<section id="who" class="section">
+<div class="container who-wrapper">
+<div class="who-left">
+<div class="who-accent"></div>
+<h2>Who We Are</h2>
+<p class="who-lead">
+A niche transformation partner focused on enterprise business process transformation.
+</p>
+<p>
+We redesign and optimize logistics, planning and operational processes leveraging structured technology and AI enablement.
+</p>
+<p>
+Senior accountability. Structured execution. Sustainable measurable impact.
+</p>
+</div>
+
+<div>
+<div class="who-feature">
+<h4>Business Process Transformation</h4>
+<p>End-to-end redesign with measurable KPI uplift.</p>
+</div>
+
+<div class="who-feature">
+<h4>Technology & AI Enablement</h4>
+<p>Automation, data platforms and AI deployed as performance levers.</p>
+</div>
+
+<div class="who-feature">
+<h4>Enterprise Execution</h4>
+<p>Global rollouts and real adoption beyond go-live.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section light">
+<div class="container">
+<h2>Contact</h2>
+<p>
+Prague · Czech Republic · Europe<br>
+<strong><a href="mailto:Michal.Broz@XecLabs.eu">Michal.Broz@XecLabs.eu</a></strong>
+</p>
+</div>
+</section>
 
 <footer>© 2026 XecLabs</footer>
 
