@@ -5,43 +5,16 @@
 <title>XecLabs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-
-body{
-font-family:'Inter',sans-serif;
-color:#111;
-line-height:1.6;
-background:#fff;
-scroll-behavior:smooth;
-margin-top:34px;
-}
-
+body{font-family:Arial,sans-serif;color:#111;line-height:1.6;background:#fff;scroll-behavior:smooth}
 .container{max-width:1150px;margin:auto;padding:0 24px}
-
-/* TEST BANNER */
-.test-banner{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#ef4444;
-color:white;
-text-align:center;
-padding:6px;
-font-weight:bold;
-z-index:9999;
-font-size:14px;
-}
 
 /* NAV */
 .nav{background:#020617;position:sticky;top:0;z-index:100}
 .nav-inner{display:flex;justify-content:space-between;align-items:center;height:64px}
 .brand-text{font-weight:700;font-size:1.1rem}
-.xec{color:#fff}
-.labs{color:#3aa0ff}
+.xec{color:#fff}.labs{color:#3aa0ff}
 .nav-links{list-style:none;display:flex;gap:24px}
 .nav-links a{color:#cbd5f5;text-decoration:none}
 .nav-cta{background:#2563eb;padding:8px 16px;border-radius:6px;color:#fff}
@@ -121,13 +94,33 @@ footer{text-align:center;padding:40px;color:#666}
 .who-wrapper{grid-template-columns:1fr}
 .hero-title{font-size:2.6rem}
 }
+  /* TEST BANNER */
+.test-banner{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#ef4444;
+color:white;
+text-align:center;
+padding:6px;
+font-weight:bold;
+z-index:9999;
+font-size:14px;
+}
+
+/* aby banner nepřekrýval menu */
+body{
+margin-top:34px;
+}
 </style>
 </head>
 
 <body>
 
-<div class="test-banner">TEST VERSION</div>
-
+<div style="position:fixed;top:0;left:0;width:100%;background:red;color:white;text-align:center;z-index:9999;">
+TEST VERSION
+</div>  
 <nav class="nav">
 <div class="container nav-inner">
 <div class="brand-text"><span class="xec">Xec</span><span class="labs">Labs</span></div>
@@ -151,28 +144,30 @@ Business process transformation powered by technology, automation and AI — exe
 </div>
 </header>
 
-<!-- WHO -->
 <section id="who" class="section">
 <div class="container who-wrapper">
 <div class="who-left">
 <div class="who-accent"></div>
 <h2>Who We Are</h2>
-<p class="who-lead">A niche transformation partner focused on enterprise business process transformation.</p>
-<p>We redesign and optimize logistics, planning and operational processes leveraging structured technology and AI enablement.</p>
-<p>Senior accountability. Structured execution. Sustainable measurable impact.</p>
+<p class="who-lead">
+A niche transformation partner focused on enterprise business process transformation.
+</p>
+<p>
+We redesign and optimize logistics, planning and operational processes leveraging structured technology and AI enablement.
+</p>
+<p>
+Senior accountability. Structured execution. Sustainable measurable impact.
+</p>
 </div>
-
 <div>
 <div class="who-feature">
 <h4>Business Process Transformation</h4>
 <p>End-to-end redesign with measurable KPI uplift.</p>
 </div>
-
 <div class="who-feature">
 <h4>Technology & AI Enablement</h4>
 <p>Automation, data platforms and AI deployed as performance levers.</p>
 </div>
-
 <div class="who-feature">
 <h4>Enterprise Execution</h4>
 <p>Global rollouts and real adoption beyond go-live.</p>
@@ -181,43 +176,157 @@ Business process transformation powered by technology, automation and AI — exe
 </div>
 </section>
 
-<!-- IMPACT -->
 <section id="impact" class="section impact">
 <div class="container">
 <div class="impact-frame">
 <h2>Impact Delivered</h2>
 <div class="impact-grid">
-
-<div>
-<div class="impact-number" data-target="10" data-prefix="$" data-suffix="M+">0</div>
-<p>Direct Business Value</p>
-</div>
-
-<div>
-<div class="impact-number" data-target="40" data-suffix="+">0</div>
-<p>Countries Impacted</p>
-</div>
-
-<div>
-<div class="impact-number" data-target="57" data-suffix="%">0</div>
-<p>Touchless Automation</p>
-</div>
-
-<div>
-<div class="impact-number" data-target="93" data-suffix="%">0</div>
-<p>System Stability</p>
-</div>
-
+<div><div class="impact-number" data-target="10" data-prefix="$" data-suffix="M+">0</div><p>Direct Business Value</p></div>
+<div><div class="impact-number" data-target="40" data-suffix="+">0</div><p>Countries Impacted</p></div>
+<div><div class="impact-number" data-target="57" data-suffix="%">0</div><p>Touchless Automation</p></div>
+<div><div class="impact-number" data-target="93" data-suffix="%">0</div><p>System Stability</p></div>
 </div>
 </div>
 </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects" class="section">
 <div class="container">
 <h2>Transformation Portfolio</h2>
-<p>Portfolio section (projects preserved from original layout)</p>
+
+<div class="project-company">
+<div class="company-header">
+<img src="abinbev.png" alt="AB InBev">
+<p class="company-description">Enterprise transformation programs delivered across logistics, data, automation and AI.</p>
+</div>
+
+<div class="project-grid">
+
+<div class="project-card">
+<h4>Weight per Shipment Optimization</h4>
+<p>Lean Six Sigma redesign of shipment behavior and transport utilization.</p>
+<div class="kpi-badges">
+<span>$150K Annual</span>
+<span>Higher Utilization</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>SAP XI → SAP PO Migration</h4>
+<p>Centralized integration architecture and governance model.</p>
+<div class="kpi-badges">
+<span>Reduced Incidents</span>
+<span>Higher Stability</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>European TMS – Blue Yonder</h4>
+<p>Multi-country logistics automation and process standardization.</p>
+<div class="kpi-badges">
+<span>57% Touchless</span>
+<span>+12% OTIF</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>NLP + Outlook + RPA Automation</h4>
+<p>Email classification and automated TMS updates via RPA bots.</p>
+<div class="kpi-badges">
+<span>FTE Savings</span>
+<span>Lower Error Rate</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Global Document Management System</h4>
+<p>Enterprise DMS platform and workflow governance model.</p>
+<div class="kpi-badges">
+<span>+6% FTR</span>
+<span>Audit Ready</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Complaints Portal (PWA) + RPA</h4>
+<p>Digital customer portal integrated with backend automation.</p>
+<div class="kpi-badges">
+<span>Faster Resolution</span>
+<span>Lower Processing Cost</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Workflow Apps (PowerApps Suite)</h4>
+<p>Low-code approval and master data workflows.</p>
+<div class="kpi-badges">
+<span>Faster Approvals</span>
+<span>Lower Error Rate</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Smart Inventory Management (Data Science)</h4>
+<p>Predictive inventory optimization using ML models.</p>
+<div class="kpi-badges">
+<span>Lower Working Capital</span>
+<span>Higher Service Level</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Loading Forecast Model</h4>
+<p>Predictive capacity planning for transport volumes.</p>
+<div class="kpi-badges">
+<span>Lower Urgent Shipments</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Azure Data Lake + Databricks + BI Command Center</h4>
+<p>Enterprise data backbone and executive dashboards.</p>
+<div class="kpi-badges">
+<span>Single Source of Truth</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>o9 Global Planning Platform</h4>
+<p>End-to-end planning integration and stability uplift.</p>
+<div class="kpi-badges">
+<span>77% → 93%</span>
+<span>$1.5M Savings</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Agentic AI – Stock Obsolescence</h4>
+<p>AI-driven redistribution and optimization engine.</p>
+<div class="kpi-badges">
+<span>$1.2M Case</span>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="project-company">
+<div class="company-header">
+<img src="emco.png" alt="Emco">
+<p class="company-description">Current transformation initiatives.</p>
+</div>
+<div class="project-grid">
+<div class="project-card">
+<h4>PLM – Product Lifecycle Management</h4>
+<p>From idea to shop floor integration.</p>
+</div>
+<div class="project-card">
+<h4>APS – Advanced Planning System</h4>
+<p>Improved forecast accuracy and operational alignment.</p>
+</div>
+</div>
+</div>
+
 </div>
 </section>
 
@@ -233,5 +342,84 @@ Prague · Czech Republic · Europe<br>
 
 <footer>© 2026 XecLabs</footer>
 
-</body>
-</html>
+<script>
+
+// HERO ANIMATION
+const c=document.getElementById("bg-canvas"),
+ctx=c.getContext("2d"),
+h=document.querySelector(".hero");
+
+function resizeCanvas(){
+  c.width=h.offsetWidth;
+  c.height=h.offsetHeight;
+}
+resizeCanvas();
+window.addEventListener("resize",resizeCanvas);
+
+const particles=[...Array(50)].map(()=>({
+  x:Math.random()*c.width,
+  y:Math.random()*c.height,
+  vx:(Math.random()-.5)*.3,
+  vy:(Math.random()-.5)*.3
+}));
+
+(function animate(){
+  ctx.clearRect(0,0,c.width,c.height);
+  particles.forEach(p=>{
+    p.x+=p.vx;
+    p.y+=p.vy;
+    if(p.x<0||p.x>c.width)p.vx*=-1;
+    if(p.y<0||p.y>c.height)p.vy*=-1;
+    ctx.fillStyle="rgba(255,255,255,.3)";
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,1.5,0,Math.PI*2);
+    ctx.fill();
+  });
+  requestAnimationFrame(animate);
+})();
+
+
+// IMPACT COUNT-UP (FIXED VERSION)
+
+const counters=document.querySelectorAll(".impact-number");
+
+function runCounter(counter){
+  if(counter.dataset.done==="true") return;
+  counter.dataset.done="true";
+
+  const target=parseInt(counter.dataset.target);
+  const prefix=counter.dataset.prefix || "";
+  const suffix=counter.dataset.suffix || "";
+
+  const duration=1600;
+  const startTime=performance.now();
+
+  function update(currentTime){
+    const progress=Math.min((currentTime-startTime)/duration,1);
+    const value=Math.floor(progress*target);
+    counter.textContent=prefix+value+suffix;
+
+    if(progress<1){
+      requestAnimationFrame(update);
+    } else {
+      counter.textContent=prefix+target+suffix;
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+const impactSection=document.querySelector("#impact");
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      counters.forEach(counter=>runCounter(counter));
+      observer.disconnect();
+    }
+  });
+},{threshold:0.5});
+
+observer.observe(impactSection);
+
+</script>
