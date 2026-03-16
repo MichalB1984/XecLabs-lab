@@ -1,2 +1,2 @@
-# XecLabs-lab
-Staging repor for XecLabs
+# XecLabs
+xeclabs.eu

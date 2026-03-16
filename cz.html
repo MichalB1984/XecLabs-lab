@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>XecLabs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+/* --- GLOBAL --- */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;color:#111;line-height:1.6;background:#fff;scroll-behavior:smooth}
+.container{max-width:1150px;margin:auto;padding:0 24px}
+
+/* --- NAV --- */
+.nav{background:#020617;position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;height:64px}
+.brand-text{font-weight:700;font-size:1.1rem}
+.xec{color:#fff}.labs{color:#3aa0ff}
+.nav-links{list-style:none;display:flex;gap:24px;align-items:center}
+.nav-links a{color:#cbd5f5;text-decoration:none}
+.nav-links a.active-lang{color:#3aa0ff;font-weight:600}
+.lang-switch{display:flex;gap:8px;margin-left:20px}
+
+/* --- HERO --- */
+.hero{background:linear-gradient(135deg,#0f172a,#020617);color:#fff;padding:140px 0;text-align:center}
+.hero-title{font-size:3.6rem}
+.subtitle{max-width:700px;margin:16px auto;opacity:.85}
+.cta{display:inline-block;margin-top:28px;padding:14px 28px;background:#2563eb;color:#fff;text-decoration:none;border-radius:6px}
+
+/* --- SECTIONS --- */
+.section{padding:120px 0}
+.section.light{background:#f8fafc}
+h2{font-size:2.4rem;margin-bottom:40px}
+
+/* --- WHO --- */
+.who-wrapper{display:grid;grid-template-columns:1.2fr 1fr;gap:80px}
+.who-lead{font-size:1.4rem;font-weight:600;margin-bottom:24px}
+.who-feature{padding:28px;border-radius:16px;background:#f1f5f9;margin-bottom:20px}
+
+/* --- IMPACT --- */
+.impact{background:#111827;color:#fff}
+.impact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;text-align:center}
+.impact-number{font-size:3rem;font-weight:700;color:#3aa0ff}
+
+/* --- PROJECTS --- */
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+.project-card{padding:28px;border-radius:16px;background:#f1f5f9}
+footer{text-align:center;padding:40px;color:#666}
+
+</style>
+</head>
+<body>
+
+<nav class="nav">
+<div class="container nav-inner">
+<div class="brand-text"><span class="xec">Xec</span><span class="labs">Labs</span></div>
+<ul class="nav-links">
+<li><a href="#who">Who We Are</a></li>
+<li><a href="#impact">Impact</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+<li class="lang-switch">
+<a href="index.html" class="active-lang">EN</a> |
+<a href="cz.html">CZ</a>
+</li>
+</ul>
+</div>
+</nav>
+
+<header class="hero">
+<div class="container">
+<h1 class="hero-title"><span class="xec">Xec</span><span class="labs">Labs</span></h1>
+<p class="subtitle">
+Enterprise business process transformation powered by technology, automation and AI.
+</p>
+<a href="#contact" class="cta">Contact</a>
+</div>
+</header>
+
+<section id="who" class="section">
+<div class="container who-wrapper">
+<div>
+<h2>Who We Are</h2>
+<p class="who-lead">
+A niche transformation partner focused on enterprise execution.
+</p>
+<p>
+We redesign and optimize logistics, planning and operational processes leveraging structured technology and AI enablement.
+</p>
+</div>
+<div>
+<div class="who-feature">Business Process Transformation</div>
+<div class="who-feature">Technology & AI Enablement</div>
+<div class="who-feature">Enterprise Execution</div>
+</div>
+</div>
+</section>
+
+<section id="impact" class="section impact">
+<div class="container">
+<h2>Impact Delivered</h2>
+<div class="impact-grid">
+<div><div class="impact-number">$10M+</div><p>Business Value</p></div>
+<div><div class="impact-number">40+</div><p>Countries</p></div>
+<div><div class="impact-number">57%</div><p>Touchless Automation</p></div>
+<div><div class="impact-number">93%</div><p>System Stability</p></div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="section">
+<div class="container">
+<h2>Projects</h2>
+<div class="project-grid">
+<div class="project-card">European TMS – Blue Yonder</div>
+<div class="project-card">o9 Global Planning Platform</div>
+<div class="project-card">Agentic AI – Stock Optimization</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="section light">
+<div class="container">
+<h2>Contact</h2>
+<p>Prague · Czech Republic · Europe<br>
+<strong><a href="mailto:Michal.Broz@XecLabs.eu">Michal.Broz@XecLabs.eu</a></strong></p>
+</div>
+</section>
+
+<footer>© 2026 XecLabs</footer>
+
+</body>
+</html>
