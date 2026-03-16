@@ -5,24 +5,96 @@
 <title>XecLabs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-
-body{
-font-family:'Inter',sans-serif;
-color:#111;
-line-height:1.6;
-background:#fff;
-scroll-behavior:smooth;
-margin-top:34px;
-}
-
+body{font-family:Arial,sans-serif;color:#111;line-height:1.6;background:#fff;scroll-behavior:smooth}
 .container{max-width:1150px;margin:auto;padding:0 24px}
 
-/* TEST BANNER */
+/* NAV */
+.nav{background:#020617;position:sticky;top:0;z-index:100}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;height:64px}
+.brand-text{font-weight:700;font-size:1.1rem}
+.xec{color:#fff}.labs{color:#3aa0ff}
+.nav-links{list-style:none;display:flex;gap:24px}
+.nav-links a{color:#cbd5f5;text-decoration:none}
+.nav-cta{background:#2563eb;padding:8px 16px;border-radius:6px;color:#fff}
 
+/* HERO */
+.hero{position:relative;background:linear-gradient(135deg,#0f172a,#020617);color:#fff;padding:140px 0;text-align:center;overflow:hidden}
+#bg-canvas{position:absolute;inset:0;z-index:0}
+.hero-title{font-size:3.6rem}
+.subtitle{max-width:700px;margin:16px auto;opacity:.85}
+.cta{display:inline-block;margin-top:28px;padding:14px 28px;background:#2563eb;color:#fff;text-decoration:none;border-radius:6px}
+
+/* SECTIONS */
+.section{padding:120px 0}
+.section.light{background:#f8fafc}
+h2{font-size:2.4rem;margin-bottom:40px}
+
+/* WHO */
+.who-wrapper{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center}
+.who-accent{width:60px;height:4px;background:linear-gradient(90deg,#3aa0ff,#7c3aed);margin-bottom:30px;border-radius:4px}
+.who-lead{font-size:1.4rem;font-weight:600;margin-bottom:24px}
+.who-left p{margin-bottom:16px;opacity:.85}
+.who-feature{
+padding:28px;border-radius:16px;
+background:linear-gradient(145deg,#ffffff,#f1f5f9);
+box-shadow:0 12px 35px rgba(0,0,0,.06);
+transition:.3s;margin-bottom:20px}
+.who-feature:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 45px rgba(0,0,0,.1)}
+.who-feature h4{
+margin-bottom:10px;
+background:linear-gradient(90deg,#3aa0ff,#7c3aed);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent}
+
+/* IMPACT */
+.impact{background:radial-gradient(circle at top left,#111827,#020617 70%);color:#fff}
+.impact-frame{border:1px solid rgba(255,255,255,.08);padding:90px 60px;border-radius:20px;background:rgba(255,255,255,.03)}
+.impact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:60px;text-align:center}
+.impact-number{
+font-size:3.8rem;font-weight:700;
+background:linear-gradient(90deg,#3aa0ff,#7c3aed);
+-webkit-background-clip:text;-webkit-text-fill-color:transparent;
+margin-bottom:12px}
+
+/* PROJECTS */
+.project-company{margin-top:100px}
+.company-header img{max-height:70px;margin-bottom:20px}
+.company-description{opacity:.7;margin-bottom:50px}
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:28px}
+.project-card{
+padding:28px;border-radius:18px;
+background:linear-gradient(145deg,#ffffff,#f1f5f9);
+box-shadow:0 15px 40px rgba(0,0,0,.06);
+transition:.3s}
+.project-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 50px rgba(0,0,0,.1)}
+.project-card h4{
+margin-bottom:14px;
+background:linear-gradient(90deg,#3aa0ff,#7c3aed);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent}
+.project-card p{font-size:.9rem;opacity:.85;margin-bottom:10px}
+.kpi-badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.kpi-badges span{
+padding:6px 12px;font-size:.75rem;border-radius:20px;
+background:rgba(58,160,255,.08);
+border:1px solid rgba(58,160,255,.3)}
+
+footer{text-align:center;padding:40px;color:#666}
+
+@media(max-width:900px){
+.who-wrapper{grid-template-columns:1fr}
+.hero-title{font-size:2.6rem}
+}
+  /* TEST BANNER */
 .test-banner{
 position:fixed;
 top:0;
@@ -37,385 +109,317 @@ z-index:9999;
 font-size:14px;
 }
 
-/* LOGO */
-
-.logo{
-height:32px;
-margin-right:10px;
-vertical-align:middle;
-}
-
-.hero-logo{
-height:60px;
-margin-right:14px;
-vertical-align:middle;
-}
-
-/* NAV */
-
-.nav{background:#020617;position:sticky;top:0;z-index:100}
-
-.nav-inner{
-display:flex;
-justify-content:space-between;
-align-items:center;
-height:64px
-}
-
-.brand-text{
-font-weight:700;
-font-size:1.1rem;
-display:flex;
-align-items:center
-}
-
-.xec{color:#fff}
-.labs{color:#3aa0ff}
-
-.nav-links{
-list-style:none;
-display:flex;
-gap:24px
-}
-
-.nav-links a{
-color:#cbd5f5;
-text-decoration:none
-}
-
-.nav-cta{
-background:#2563eb;
-padding:8px 16px;
-border-radius:6px;
-color:#fff
-}
-
-/* HERO */
-
-.hero{
-position:relative;
-background:linear-gradient(135deg,#0f172a,#020617);
-color:#fff;
-padding:140px 0;
-text-align:center;
-overflow:hidden
-}
-
-#bg-canvas{
-position:absolute;
-inset:0;
-z-index:0
-}
-
-.hero-title{
-font-size:3.6rem;
-display:flex;
-justify-content:center;
-align-items:center;
-gap:10px
-}
-
-.subtitle{
-max-width:700px;
-margin:16px auto;
-opacity:.85
-}
-
-.cta{
-display:inline-block;
-margin-top:28px;
-padding:14px 28px;
-background:#2563eb;
-color:#fff;
-text-decoration:none;
-border-radius:6px
-}
-
-/* SECTIONS */
-
-.section{padding:120px 0}
-.section.light{background:#f8fafc}
-h2{font-size:2.4rem;margin-bottom:40px}
-
-/* WHO */
-
-.who-wrapper{
-display:grid;
-grid-template-columns:1.2fr 1fr;
-gap:80px;
-align-items:center
-}
-
-.who-accent{
-width:60px;
-height:4px;
-background:linear-gradient(90deg,#3aa0ff,#7c3aed);
-margin-bottom:30px;
-border-radius:4px
-}
-
-.who-lead{
-font-size:1.4rem;
-font-weight:600;
-margin-bottom:24px
-}
-
-.who-left p{
-margin-bottom:16px;
-opacity:.85
-}
-
-.who-feature{
-padding:28px;
-border-radius:16px;
-background:linear-gradient(145deg,#ffffff,#f1f5f9);
-box-shadow:0 12px 35px rgba(0,0,0,.06);
-transition:.3s;
-margin-bottom:20px
-}
-
-.who-feature:hover{
-transform:translateY(-6px);
-box-shadow:0 18px 45px rgba(0,0,0,.1)
-}
-
-.who-feature h4{
-margin-bottom:10px;
-background:linear-gradient(90deg,#3aa0ff,#7c3aed);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent
-}
-
-/* IMPACT */
-
-.impact{
-background:radial-gradient(circle at top left,#111827,#020617 70%);
-color:#fff
-}
-
-.impact-frame{
-border:1px solid rgba(255,255,255,.08);
-padding:90px 60px;
-border-radius:20px;
-background:rgba(255,255,255,.03)
-}
-
-.impact-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:60px;
-text-align:center
-}
-
-.impact-number{
-font-size:3.8rem;
-font-weight:700;
-background:linear-gradient(90deg,#3aa0ff,#7c3aed);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-margin-bottom:12px
-}
-
-/* PROJECTS */
-
-.project-company{margin-top:100px}
-
-.company-header img{
-max-height:70px;
-margin-bottom:20px
-}
-
-.company-description{
-opacity:.7;
-margin-bottom:50px
-}
-
-.project-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:28px
-}
-
-.project-card{
-padding:28px;
-border-radius:18px;
-background:linear-gradient(145deg,#ffffff,#f1f5f9);
-box-shadow:0 15px 40px rgba(0,0,0,.06);
-transition:.3s
-}
-
-.project-card:hover{
-transform:translateY(-8px);
-box-shadow:0 20px 50px rgba(0,0,0,.1)
-}
-
-.project-card h4{
-margin-bottom:14px;
-background:linear-gradient(90deg,#3aa0ff,#7c3aed);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent
-}
-
-.project-card p{
-font-size:.9rem;
-opacity:.85;
-margin-bottom:10px
-}
-
-.kpi-badges{
-display:flex;
-flex-wrap:wrap;
-gap:8px;
-margin-top:8px
-}
-
-.kpi-badges span{
-padding:6px 12px;
-font-size:.75rem;
-border-radius:20px;
-background:rgba(58,160,255,.08);
-border:1px solid rgba(58,160,255,.3)
-}
-
-footer{
-text-align:center;
-padding:40px;
-color:#666
-}
-
-@media(max-width:900px){
-
-.who-wrapper{
-grid-template-columns:1fr
-}
-
-.hero-title{
-font-size:2.6rem;
-flex-direction:column
-}
-
-.hero-logo{
-height:48px
-}
-
+/* aby banner nepřekrýval menu */
+body{
+margin-top:34px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="test-banner">TEST VERSION</div>
-
+<div style="position:fixed;top:0;left:0;width:100%;background:red;color:white;text-align:center;z-index:9999;">
+TEST VERSION
+</div>  
 <nav class="nav">
 <div class="container nav-inner">
-
-<div class="brand-text">
-<img src="logo.png" class="logo">
-<span class="xec">Xec</span><span class="labs">Labs</span>
-</div>
-
+<div class="brand-text"><span class="xec">Xec</span><span class="labs">Labs</span></div>
 <ul class="nav-links">
 <li><a href="#who">Who We Are</a></li>
 <li><a href="#impact">Impact</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact" class="nav-cta">Contact</a></li>
 </ul>
-
 </div>
 </nav>
 
 <header class="hero">
-
 <canvas id="bg-canvas"></canvas>
-
 <div class="container">
-
-<h1 class="hero-title">
-<img src="logo.png" class="hero-logo">
-<span class="xec">Xec</span><span class="labs">Labs</span>
-</h1>
-
+<h1 class="hero-title"><span class="xec">Xec</span><span class="labs">Labs</span></h1>
 <p class="subtitle">
 Business process transformation powered by technology, automation and AI — executed with senior ownership.
 </p>
-
 <a href="#contact" class="cta">Contact</a>
-
 </div>
-
 </header>
 
-<!-- WHO -->
-
 <section id="who" class="section">
-
 <div class="container who-wrapper">
-
 <div class="who-left">
-
 <div class="who-accent"></div>
-
 <h2>Who We Are</h2>
-
 <p class="who-lead">
 A niche transformation partner focused on enterprise business process transformation.
 </p>
-
 <p>
 We redesign and optimize logistics, planning and operational processes leveraging structured technology and AI enablement.
 </p>
-
 <p>
 Senior accountability. Structured execution. Sustainable measurable impact.
 </p>
-
 </div>
-
 <div>
-
 <div class="who-feature">
 <h4>Business Process Transformation</h4>
 <p>End-to-end redesign with measurable KPI uplift.</p>
 </div>
-
 <div class="who-feature">
 <h4>Technology & AI Enablement</h4>
 <p>Automation, data platforms and AI deployed as performance levers.</p>
 </div>
-
 <div class="who-feature">
 <h4>Enterprise Execution</h4>
 <p>Global rollouts and real adoption beyond go-live.</p>
 </div>
+</div>
+</div>
+</section>
 
+<section id="impact" class="section impact">
+<div class="container">
+<div class="impact-frame">
+<h2>Impact Delivered</h2>
+<div class="impact-grid">
+<div><div class="impact-number" data-target="10" data-prefix="$" data-suffix="M+">0</div><p>Direct Business Value</p></div>
+<div><div class="impact-number" data-target="40" data-suffix="+">0</div><p>Countries Impacted</p></div>
+<div><div class="impact-number" data-target="57" data-suffix="%">0</div><p>Touchless Automation</p></div>
+<div><div class="impact-number" data-target="93" data-suffix="%">0</div><p>System Stability</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="projects" class="section">
+<div class="container">
+<h2>Transformation Portfolio</h2>
+
+<div class="project-company">
+<div class="company-header">
+<img src="abinbev.png" alt="AB InBev">
+<p class="company-description">Enterprise transformation programs delivered across logistics, data, automation and AI.</p>
+</div>
+
+<div class="project-grid">
+
+<div class="project-card">
+<h4>Weight per Shipment Optimization</h4>
+<p>Lean Six Sigma redesign of shipment behavior and transport utilization.</p>
+<div class="kpi-badges">
+<span>$150K Annual</span>
+<span>Higher Utilization</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>SAP XI → SAP PO Migration</h4>
+<p>Centralized integration architecture and governance model.</p>
+<div class="kpi-badges">
+<span>Reduced Incidents</span>
+<span>Higher Stability</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>European TMS – Blue Yonder</h4>
+<p>Multi-country logistics automation and process standardization.</p>
+<div class="kpi-badges">
+<span>57% Touchless</span>
+<span>+12% OTIF</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>NLP + Outlook + RPA Automation</h4>
+<p>Email classification and automated TMS updates via RPA bots.</p>
+<div class="kpi-badges">
+<span>FTE Savings</span>
+<span>Lower Error Rate</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Global Document Management System</h4>
+<p>Enterprise DMS platform and workflow governance model.</p>
+<div class="kpi-badges">
+<span>+6% FTR</span>
+<span>Audit Ready</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Complaints Portal (PWA) + RPA</h4>
+<p>Digital customer portal integrated with backend automation.</p>
+<div class="kpi-badges">
+<span>Faster Resolution</span>
+<span>Lower Processing Cost</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Workflow Apps (PowerApps Suite)</h4>
+<p>Low-code approval and master data workflows.</p>
+<div class="kpi-badges">
+<span>Faster Approvals</span>
+<span>Lower Error Rate</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Smart Inventory Management (Data Science)</h4>
+<p>Predictive inventory optimization using ML models.</p>
+<div class="kpi-badges">
+<span>Lower Working Capital</span>
+<span>Higher Service Level</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Loading Forecast Model</h4>
+<p>Predictive capacity planning for transport volumes.</p>
+<div class="kpi-badges">
+<span>Lower Urgent Shipments</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Azure Data Lake + Databricks + BI Command Center</h4>
+<p>Enterprise data backbone and executive dashboards.</p>
+<div class="kpi-badges">
+<span>Single Source of Truth</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>o9 Global Planning Platform</h4>
+<p>End-to-end planning integration and stability uplift.</p>
+<div class="kpi-badges">
+<span>77% → 93%</span>
+<span>$1.5M Savings</span>
+</div>
+</div>
+
+<div class="project-card">
+<h4>Agentic AI – Stock Obsolescence</h4>
+<p>AI-driven redistribution and optimization engine.</p>
+<div class="kpi-badges">
+<span>$1.2M Case</span>
+</div>
 </div>
 
 </div>
+</div>
 
+<div class="project-company">
+<div class="company-header">
+<img src="emco.png" alt="Emco">
+<p class="company-description">Current transformation initiatives.</p>
+</div>
+<div class="project-grid">
+<div class="project-card">
+<h4>PLM – Product Lifecycle Management</h4>
+<p>From idea to shop floor integration.</p>
+</div>
+<div class="project-card">
+<h4>APS – Advanced Planning System</h4>
+<p>Improved forecast accuracy and operational alignment.</p>
+</div>
+</div>
+</div>
+
+</div>
 </section>
 
 <section id="contact" class="section light">
-
 <div class="container">
-
 <h2>Contact</h2>
-
 <p>
 Prague · Czech Republic · Europe<br>
-<strong>
-<a href="mailto:Michal.Broz@XecLabs.eu">Michal.Broz@XecLabs.eu</a>
-</strong>
+<strong><a href="mailto:Michal.Broz@XecLabs.eu">Michal.Broz@XecLabs.eu</a></strong>
 </p>
-
 </div>
-
 </section>
 
-<footer>
+<footer>© 2026 XecLabs</footer>
 
-© 2026 XecLabs
+<script>
 
-</footer>
+// HERO ANIMATION
+const c=document.getElementById("bg-canvas"),
+ctx=c.getContext("2d"),
+h=document.querySelector(".hero");
 
-</body>
-</html>
+function resizeCanvas(){
+  c.width=h.offsetWidth;
+  c.height=h.offsetHeight;
+}
+resizeCanvas();
+window.addEventListener("resize",resizeCanvas);
+
+const particles=[...Array(50)].map(()=>({
+  x:Math.random()*c.width,
+  y:Math.random()*c.height,
+  vx:(Math.random()-.5)*.3,
+  vy:(Math.random()-.5)*.3
+}));
+
+(function animate(){
+  ctx.clearRect(0,0,c.width,c.height);
+  particles.forEach(p=>{
+    p.x+=p.vx;
+    p.y+=p.vy;
+    if(p.x<0||p.x>c.width)p.vx*=-1;
+    if(p.y<0||p.y>c.height)p.vy*=-1;
+    ctx.fillStyle="rgba(255,255,255,.3)";
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,1.5,0,Math.PI*2);
+    ctx.fill();
+  });
+  requestAnimationFrame(animate);
+})();
+
+
+// IMPACT COUNT-UP (FIXED VERSION)
+
+const counters=document.querySelectorAll(".impact-number");
+
+function runCounter(counter){
+  if(counter.dataset.done==="true") return;
+  counter.dataset.done="true";
+
+  const target=parseInt(counter.dataset.target);
+  const prefix=counter.dataset.prefix || "";
+  const suffix=counter.dataset.suffix || "";
+
+  const duration=1600;
+  const startTime=performance.now();
+
+  function update(currentTime){
+    const progress=Math.min((currentTime-startTime)/duration,1);
+    const value=Math.floor(progress*target);
+    counter.textContent=prefix+value+suffix;
+
+    if(progress<1){
+      requestAnimationFrame(update);
+    } else {
+      counter.textContent=prefix+target+suffix;
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+const impactSection=document.querySelector("#impact");
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      counters.forEach(counter=>runCounter(counter));
+      observer.disconnect();
+    }
+  });
+},{threshold:0.5});
+
+observer.observe(impactSection);
+
+</script>
