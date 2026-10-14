@@ -1,0 +1,29 @@
+.environment-banner {
+  position: fixed;
+  z-index: 50;
+  inset: 0 0 auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: #ff4d3f;
+  color: #fff;
+  font: 700 10px/1 "DM Mono", monospace;
+  letter-spacing: .16em;
+}
+
+.environment-banner span { color: #ffd2cc; }
+.environment-banner small {
+  margin-left: 8px;
+  font: 400 9px/1 "DM Mono", monospace;
+  letter-spacing: .12em;
+  opacity: .82;
+}
+.site-header { top: 32px; }
+
+@media (max-width: 600px) {
+  .environment-banner { height: 30px; font-size: 9px; }
+  .environment-banner small { font-size: 8px; }
+  .site-header { top: 30px; }
+}

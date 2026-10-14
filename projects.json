@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "organization": "XecLabs",
+  "portfolio": [
+    {"id":"weight-per-shipment","company":"AB InBev","title":"Weight per shipment optimization","category":"PROCESS DESIGN","description":"Lean Six Sigma redesign of shipment behavior and transport utilization.","outcomes":["$150K annual value","Higher utilization"]},
+    {"id":"sap-integration","company":"AB InBev","title":"SAP XI to SAP PO migration","category":"PLATFORM MODERNIZATION","description":"Centralized integration architecture and governance model.","outcomes":["Reduced incidents","Higher stability"]},
+    {"id":"european-tms","company":"AB InBev","title":"European transport management","category":"LOGISTICS","description":"Multi-country logistics automation and process standardization with Blue Yonder.","outcomes":["57% touchless","+12% OTIF"]},
+    {"id":"email-automation","company":"AB InBev","title":"NLP, Outlook and RPA automation","category":"INTELLIGENT AUTOMATION","description":"Email classification and automated TMS updates using RPA bots.","outcomes":["FTE savings","Lower error rate"]},
+    {"id":"document-management","company":"AB InBev","title":"Global document management","category":"ENTERPRISE PLATFORMS","description":"Enterprise document management platform and workflow governance model.","outcomes":["+6% FTR","Audit ready"]},
+    {"id":"complaints-portal","company":"AB InBev","title":"Complaints portal and RPA","category":"DIGITAL EXPERIENCE","description":"Digital customer portal integrated with backend automation.","outcomes":["Faster resolution","Lower processing cost"]},
+    {"id":"workflow-apps","company":"AB InBev","title":"Workflow apps suite","category":"LOW-CODE","description":"Low-code approval and master data workflows built with Power Apps.","outcomes":["Faster approvals","Lower error rate"]},
+    {"id":"smart-inventory","company":"AB InBev","title":"Smart inventory management","category":"DATA SCIENCE","description":"Predictive inventory optimization using machine learning models.","outcomes":["Lower working capital","Higher service level"]},
+    {"id":"loading-forecast","company":"AB InBev","title":"Loading forecast model","category":"PREDICTIVE ANALYTICS","description":"Predictive capacity planning for transport volumes.","outcomes":["Fewer urgent shipments"]},
+    {"id":"data-command-center","company":"AB InBev","title":"Data lake and BI command center","category":"DATA PLATFORM","description":"Azure Data Lake, Databricks and BI dashboards creating an enterprise data backbone.","outcomes":["Single source of truth"]},
+    {"id":"o9-planning","company":"AB InBev","title":"Global planning platform","category":"PLANNING","description":"End-to-end planning integration and stability uplift on o9.","outcomes":["77% to 93% stability","$1.5M savings"]},
+    {"id":"stock-obsolescence-ai","company":"AB InBev","title":"Agentic AI for stock obsolescence","category":"APPLIED AI","description":"AI-driven redistribution and optimization engine.","outcomes":["$1.2M business case"]}
+  ],
+  "currentInitiatives": [
+    {"company":"Emco","title":"Product lifecycle management","description":"Connecting product development from idea through to the shop floor."},
+    {"company":"Emco","title":"Advanced planning system","description":"Improving forecast accuracy and operational alignment."}
+  ]
+}
