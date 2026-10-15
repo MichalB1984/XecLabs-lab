@@ -16,7 +16,7 @@ async function loadPortfolio() {
         <div class="project-top"><span class="project-number">${String(index + 1).padStart(2, "0")} / ${escapeHtml(project.company)}</span><span class="project-category">${escapeHtml(project.category)}</span></div>
         <h3>${escapeHtml(project.title)}</h3><p>${escapeHtml(project.description)}</p>
         <div class="project-tags">${project.outcomes.map(item => `<span>${escapeHtml(item)}</span>`).join("")}</div>
-        ${project.caseStudy ? `<details class="project-details"><summary>Read case study</summary><dl class="case-study-facts"><div><dt>Focus</dt><dd>${escapeHtml(project.caseStudy.focus)}</dd></div><div><dt>Role</dt><dd>${escapeHtml(project.caseStudy.role)}</dd></div><div><dt>Impact</dt><dd>${escapeHtml(project.caseStudy.impact)}</dd></div></dl></details>` : ""}
+        ${project.caseStudy ? `<details class="project-details"><summary>Explore case study</summary><div class="case-study-content"><img class="client-logo" src="assets/abinbev.png" alt="AB InBev" loading="lazy"><div class="case-study-sections">${project.caseStudy.sections.map(section => `<section class="case-study-section"><h4>${escapeHtml(section.heading)}</h4><ul>${section.items.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>`).join("")}</div></div></details>` : ""}
       </article>`).join("");
     count.textContent = `${String(projects.length).padStart(2, "0")} CASE STUDIES`;
   } catch {
