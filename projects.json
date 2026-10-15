@@ -12,7 +12,7 @@
     {"id":"smart-inventory","company":"AB InBev","title":"Smart inventory management","category":"DATA SCIENCE","description":"Predictive inventory optimization using machine learning models.","outcomes":["Lower working capital","Higher service level"]},
     {"id":"loading-forecast","company":"AB InBev","title":"Loading forecast model","category":"PREDICTIVE ANALYTICS","description":"Predictive capacity planning for transport volumes.","outcomes":["Fewer urgent shipments"]},
     {"id":"data-command-center","company":"AB InBev","title":"Data lake and BI command center","category":"DATA PLATFORM","description":"Azure Data Lake, Databricks and BI dashboards creating an enterprise data backbone.","outcomes":["Single source of truth"]},
-    {"id":"o9-planning","company":"AB InBev","title":"Global planning platform","category":"PLANNING","description":"End-to-end planning integration and stability uplift on o9.","outcomes":["77% to 93% stability","$1.5M savings"]},
+    {"id":"o9-planning","company":"AB InBev","title":"Global planning platform","category":"PLANNING","description":"End-to-end planning integration and stability uplift on o9.","outcomes":["77% to 93% stability","$1.5M savings"],"caseStudy":{"focus":"End-to-end planning integration and platform stability improvement on o9.","role":"Transformation program management across the planning initiative.","impact":"Platform stability improved from 77% to 93%; delivered $1.5M in savings."}},
     {"id":"stock-obsolescence-ai","company":"AB InBev","title":"Agentic AI for stock obsolescence","category":"APPLIED AI","description":"AI-driven redistribution and optimization engine.","outcomes":["$1.2M business case"]}
   ],
   "currentInitiatives": [

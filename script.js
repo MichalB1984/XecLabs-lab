@@ -16,6 +16,7 @@ async function loadPortfolio() {
         <div class="project-top"><span class="project-number">${String(index + 1).padStart(2, "0")} / ${escapeHtml(project.company)}</span><span class="project-category">${escapeHtml(project.category)}</span></div>
         <h3>${escapeHtml(project.title)}</h3><p>${escapeHtml(project.description)}</p>
         <div class="project-tags">${project.outcomes.map(item => `<span>${escapeHtml(item)}</span>`).join("")}</div>
+        ${project.caseStudy ? `<details class="project-details"><summary>Read case study</summary><dl class="case-study-facts"><div><dt>Focus</dt><dd>${escapeHtml(project.caseStudy.focus)}</dd></div><div><dt>Role</dt><dd>${escapeHtml(project.caseStudy.role)}</dd></div><div><dt>Impact</dt><dd>${escapeHtml(project.caseStudy.impact)}</dd></div></dl></details>` : ""}
       </article>`).join("");
     count.textContent = `${String(projects.length).padStart(2, "0")} CASE STUDIES`;
   } catch {
